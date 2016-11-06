@@ -18,13 +18,14 @@ header {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 500px;
+  padding-bottom: 700px;
 }
 
 #aboutme {
   position: absolute;
   top: 150px;
   right: 50px;
+  text-align: left;
 }
 
 #aboutme h1 {
@@ -74,6 +75,11 @@ nav ul li a {
 
 nav ul li a.selected {
   color: #000;
+}
+
+img.service{
+  width: 500px;
+　height: 300px;
 }
 
 footer {

@@ -2,16 +2,46 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>サービス紹介</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
+    <!-- jQuery読み込み -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- スムーズスクロール部分の記述 -->
+    <script>
+$(function(){
+   // #で始まるアンカーをクリックした場合に処理
+   $('a[href^=#]').click(function() {
+      // スクロールの速度
+      var speed = 400; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position = target.offset().top;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
   </head>
   <body>
     <header>
       <nav>
+        <nav class="navbar navbar-fixed-top">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="selected">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#aboutme">TOP</a></li>
+          <li><a href="#1">service1</a></li>
+          <li><a href="#2">service2</a></li>
+          <li><a href="#3">service3</a></li>
+          <li><a href="https://mindclip.github.io/">ユーザーページ</a></li>
         </ul>
       </nav>
       <div id="aboutme">
@@ -27,9 +57,44 @@
         </ul>
       </div>
     </header>
+      <div id="1">
+        <div class="container">
+  <table class="table">
+    <tbody>
+      <tr>
+        <td><img src="service.jpg" class="service" alt=""></td>
+        <td>慶応3年1月5日（新暦2月9日）江戸牛込馬場下横町に生まれる。本名は夏目金之助。帝国大学文科大学（東京大学文学部）を卒業後、東京高等師範学校、松山中学、第五高等学校などの教師生活を経て、1900年イギリスに留学する。帰国後、第一高等学校で教鞭をとりながら、1905年処女作「吾輩は猫である」を発表。1906年「坊っちゃん」「草枕」を発表。1907年教職を辞し、朝日新聞社に入社。そして「虞美人草」「三四郎」などを発表するが、胃病に苦しむようになる。1916年12月9日、「明暗」の連載途中に胃潰瘍で永眠。享年50歳であった。文</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+      </div>
+      <div id="2">
+        <div class="container">
+  <table class="table">
+    <tbody>
+      <tr>
+        <td><img src="service.jpg" class="service" alt=""></td>
+        <td>慶応3年1月5日（新暦2月9日）江戸牛込馬場下横町に生まれる。本名は夏目金之助。帝国大学文科大学（東京大学文学部）を卒業後、東京高等師範学校、松山中学、第五高等学校などの教師生活を経て、1900年イギリスに留学する。帰国後、第一高等学校で教鞭をとりながら、1905年処女作「吾輩は猫である」を発表。1906年「坊っちゃん」「草枕」を発表。1907年教職を辞し、朝日新聞社に入社。そして「虞美人草」「三四郎」などを発表するが、胃病に苦しむようになる。1916年12月9日、「明暗」の連載途中に胃潰瘍で永眠。享年50歳であった。</td>
+      </tr>
+    </tbody>
+  </table>
+　　　</div>
+      </div>
+      <div id="3">
+        <div class="container">
+  <table class="table">
+    <tbody>
+      <tr>
+        <td><img src="service.jpg" class="service" alt=""></td>
+        <td>慶応3年1月5日（新暦2月9日）江戸牛込馬場下横町に生まれる。本名は夏目金之助。帝国大学文科大学（東京大学文学部）を卒業後、東京高等師範学校、松山中学、第五高等学校などの教師生活を経て、1900年イギリスに留学する。帰国後、第一高等学校で教鞭をとりながら、1905年処女作「吾輩は猫である」を発表。1906年「坊っちゃん」「草枕」を発表。1907年教職を辞し、朝日新聞社に入社。そして「虞美人草」「三四郎」などを発表するが、胃病に苦しむようになる。1916年12月9日、「明暗」の連載途中に胃潰瘍で永眠。享年50歳であった。</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+      </div>
       <footer>
         <p>&copy; 2016 Masato Inomata.</p>
       </footer>
-    </div>
   </body>
 </html>
