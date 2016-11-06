@@ -77,6 +77,10 @@ nav ul li a.selected {
   color: #000;
 }
 
+table.table {
+  margin: 50px 20px 20px 10px;
+}
+
 img.service{
   width: 500px;
 　height: 300px;
